@@ -35,7 +35,7 @@ require_once('session_check.php');
 	</div>
 	<div id="produk">
 		<div class="container">
-			<h1 class="text-center mt-5">Sampel Produk Kami</h1>
+			<h1 class="text-center mt-5">Sempel Produk Kami</h1>
 			<p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, veniam?</p>
 			<? if ($sessionStatus) : ?>
 				<a href="form_produk.php" class="btn add produk text-success mt-2 mb-3">Tambah</a>

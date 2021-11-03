@@ -24,7 +24,7 @@
 					<a class="nav-link" aria-current="page"  href="index.php">HOME</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" aria-current="page"  href="produk.php">SAMPEL</a>
+					<a class="nav-link" aria-current="page"  href="produk.php">SEMPEL</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" aria-current="page"  href="lokasi.php">LOKASI</a>

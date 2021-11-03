@@ -142,12 +142,12 @@ require_once('session_check.php');
 			<!-- end container -->
 		</div>
 
-		
-
 		<!-- isi home -->
 		<div id="produk" class=" pb-4 pt-4">
 
 			<div class="container">
+				<p class="judul-produk text-center">SEMPEL PRODUK</p>
+				<p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, veniam?</p>
 				<!-- batas row -->
 				<div class="row">
 					<!-- colom kiri -->
@@ -218,7 +218,7 @@ require_once('session_check.php');
 							<!-- end foreach -->
 						</div>
 					</div>
-					
+
 					<div class="col-12 d-flex justify-content-center pt-2">
 						<div class="lain-nya text-center rounded">
 							<a href="produk.php" class="text-dark text-decoration-none shadow-sm">Lain-nya</a>
