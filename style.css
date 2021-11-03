@@ -1,0 +1,509 @@
+@font-face {
+	font-family: Poppins-Light;
+	src: url('fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+	font-family: Poppins-Regular;
+	src: url('fonts/Poppins-Regular.ttf');
+}
+@font-face {
+	font-family: Poppins-Bold;
+	src: url('fonts/Poppins-Bold.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+* {
+	font-family: "calibri";
+}
+body{
+	/*background: url('img/background.jpg');*/
+	/*background-color: #F6F6F6;*/
+}
+.wrapper{
+	/*background-image: linear-gradient(#FFFFFF,rgba(255,255,255,0.2));*/
+	background-color: blueviolet;
+}
+.container-fluid, .container{
+	max-width: 1200px !important;
+	margin: auto;
+}
+#header{
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+/*smart show and hide navbar*/
+.smart-scroll{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+.scrolled-down{
+	transform:translateY(-100%); transition: all 0.4s ease-in-out;
+}
+.scrolled-up{
+	transform:translateY(0); transition: all 0.4s ease-in-out;
+}
+/*end*/
+
+/*caption landing page*/
+.landing-page .judul{
+	font-size: 50px;
+	font-family: 'Poppins-Bold', sans-serif;
+}
+.landing-page .judul a{
+	font-size: 36px;
+	font-family: 'Poppins-Bold', sans-serif;
+	background-color: coral;
+
+}
+/*end*/
+
+/*nav*/
+.navbar{
+	/*background-color: #ADC2A9;*/
+	background-color: #FFFFFF;
+	z-index: 5;
+}
+.navbar-nav{
+	margin-right: 10px;
+}
+.navbar-brand{
+	cursor: default;
+	display: inline-flex;
+}
+.navbar-brand img{
+	width: 60px;
+	margin-right: 10px;
+
+}
+.navbar-brand{
+	font-family: "Brush Script MT";
+	font-size: 30px;
+	padding: 0;
+	margin: 0;
+}
+.nav-link{
+	text-decoration: none;
+	font-family: 'Poppins-Regular', sans-serif;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	color: #000 !important;
+}
+.nav-link:hover{
+	color: #000 !important;
+	box-shadow: 0px 4px 0px -1px coral;
+}
+.navbar-toggler{
+	border: none;
+}
+
+/*show menu*/
+
+.navbar-collapse{
+	transition: 0.5s;
+}
+.navbar-collapse.collapse.show{
+	margin-top: 5px;
+	transition: 0.5s;
+}
+.navbar-collapse.collapse.show li a{
+	padding-left: 10px;
+}
+.navbar-collapse.collapse.show li a:hover{
+	color: #000 !important;
+	box-shadow: 0px 3px 0px -1px coral;
+}
+.navbar-collapse.collapse.show li:hover{
+	border-bottom: none;
+}
+.navbar-collapse.collapse.show .dropdown-menu li a:hover{
+	box-shadow: none;
+}
+/*end show menu*/
+/*end nav*/
+
+/*form*/
+#form{
+	padding-top: 20px;
+	margin-bottom: 30px;
+}
+#form .col{
+	border: 2px solid #F1F1F1;
+	background-color: #F7F7F7 !important;
+	border-radius: 0px 50px 0px 50px;
+	transition: 0.5s;
+	box-shadow: 5px 5px 5px 5px #FFFFFF;
+}
+#form .col:hover{
+	box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.3) !important;
+	background-color: #FFFFFF !important;
+	transition: 0.5s;
+
+}
+#form h3, #form h2{
+	font-weight: 700;
+	font-family: 'Poppins-Bold', sans-serif;
+}
+#form img{
+	width: 200px;
+}
+#form .btn{
+	background-color: coral;
+	border: none;
+}
+#form .btn:hover{
+	background-color: #E87449;
+}
+#form .form-control{
+	background-color: #FBFBFB;
+}
+.label-form i{
+	font-size: 60px;
+}
+.label-form, .label-form a{
+	font-size: 11px;
+	text-decoration: none;
+}
+label{
+	font-size: 14px;
+}
+input:focus, .btn:focus, .navbar-toggler:focus, .accordion-button:focus, textarea{
+	box-shadow: none !important;
+}
+/*end form*/
+
+/*kontak*/
+#kontak{
+	position: fixed;
+	bottom: 25px;
+	right: 0px;
+	z-index: 5;
+	
+}
+#wa{
+	font-size: 40px;
+	border-radius: 50%;
+	padding: 0px 10px 0px 10px;
+	color: #FFFFFF;
+	box-shadow:  0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+	background-color: #01F118;
+	cursor: pointer;
+
+}
+#kontak .keterangan.wa{
+	background-color: #B1FA9B;
+	padding-top: 5px !important;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 20px;
+	padding-top: 0;
+	display: none;
+}
+/*end kontak*/
+
+/*promo*/
+#promo{
+	font-size: 14px;
+}
+
+.judul-promo, .judul-produk{
+	font-size: 22px;
+	font-family: 'Poppins-Regular', sans-serif;
+	font-weight: 700;
+}
+.foto-promo{
+	position: relative;
+}
+.foto-promo img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.foto-promo .diskon{
+	position: absolute;
+	top: 0;
+	left: 10px;
+	font-size: 14px;
+	font-family: verdana;
+	color: white;
+}
+.segitiga{
+	width: 0; 
+	height: 0; 
+	border: 50px solid;
+	border-color: #FF0048 transparent transparent #FF0048;
+	position: absolute;
+	top: 0;
+}
+#promo .add.promo{
+	box-shadow: 0px 0px 0px 2px green !important;
+	font-weight: 700;
+	border-radius: 20px;
+}
+#promo .add.promo:hover{
+	background-color: green; 
+	color: white !important;
+}
+#promo .card-body .beli{
+	font-size: 16px;
+}
+
+#promo table img{
+	width: 100px;
+}
+/*end*/
+
+/*footer*/
+#footer{
+	/*background-color: #424242;*/
+	/*background-color: #F7F7F7;*/
+}
+#footer ul li{
+	list-style: none;
+}
+#footer .col{
+	font-family: "times new roman";
+
+}
+#footer img{
+	width: 100%;
+	max-height: 180px;
+	max-width: 180px;
+	min-width: 150px;
+	min-height: 150px;
+}
+#footer .row.footer-1{
+	box-shadow: 0px 1px 0px 0px #C5C4C4;
+}
+#footer .row.footer-1 .col h6{
+	font-size: 16px;
+	font-weight: 700;
+}
+#footer .row.footer-1 .col ul{
+	padding: 0;
+}
+#footer .row.footer-1 .col li{
+	font-size: 14px;
+}
+#footer .row.footer-2 p{
+	font-size: 10px;
+	margin: 0;
+}
+.contact-us li a{
+	text-decoration: none;
+	color: #000;
+}
+/*end footer*/
+
+/*lokasi*/
+iframe{
+	margin-top: 20px;
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+	margin-bottom: 20px;
+}
+/*tombol pesan*/
+.tombol-pesan{
+	font-size: 18px;
+	font-weight: 700;
+	padding: 10px 15px 10px 15px;
+	border: 2px solid coral;
+	background-color: #FFFFFF;
+	color: coral;
+	transition: 0.6s;
+}
+.tombol-pesan:hover{
+	color: #FFFFFF;
+	background-color: coral;
+	transition: 0.6s;
+}
+/*end*/
+
+/*about*/
+#about .col-kanan{
+	position: relative; 
+	right: 10%; 
+	background-color: 
+	rgba(217, 217, 217, 0.8);
+}
+/*end about*/
+
+/*slider*/
+
+.slider{
+	width: 250px !important;
+} 
+
+.lSPager.lSpg{
+	display: none;
+}
+
+.cS-hidden {
+	height: 1px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	overflow: hidden;
+}
+/*end*/
+
+.detail{
+	color: coral;
+	box-shadow: 0px 0px 0px 2px coral;
+	padding: 5px 20px 5px 20px;
+	transition: 0.5s;
+}
+.detail:hover{
+	box-shadow: none;
+	background-color: coral;
+	color: #FFFFFF !important;
+	transition: 0.5s;
+}
+
+.lSAction a{
+	background-color: #919191;
+	border-radius: 50%;
+}
+
+/*produk*/
+.foto-produk img{
+	max-height: 375.990px;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+#produk .add.produk{
+	box-shadow: 0px 0px 0px 2px green !important;
+	font-weight: 700;
+	border-radius: 20px;
+}
+#produk .add.produk:hover{
+	background-color: #F1F1F1;
+}
+
+#produk .lain-nya a{
+	padding: 10px 12px;
+	background-color: #F8F8F8;
+	transition: 0.5s;
+	border-radius: 10px;
+}
+#produk .lain-nya a:hover{
+	background-color: #C0C0C0;
+	font-weight: 700;
+	transition: 0.5s;
+}
+
+/*responsive layar*/
+@media screen and (min-width: 770px) and (max-width: 1024px){
+	.landing-page .judul{
+		font-size: 40px;
+	}
+	.landing-page .subjudul{
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 769px){
+	iframe{
+		min-height: 900px;
+	}
+	.landing-page .judul{
+		font-size: 29px;
+	}
+	.landing-page .subjudul{
+		font-size: 13px;
+	}
+	.landing-page .judul a{
+		font-size: 28px;
+	}
+	.segitiga{
+		border: 42px solid;
+		width: 0; 
+		height: 0; 
+		border-color: #FF0048 transparent transparent #FF0048;
+		position: absolute;
+		top: 0;
+	}
+	.foto-promo .diskon{
+		font-size: 12px;
+	}
+	.foto-promo .card-title{
+		font-size: 12px;
+	}
+	.card-body .card-text.ket{
+		font-size: 0.8rem;
+	}
+
+}
+
+@media screen and (max-width: 578px){
+	#footer .row.footer-1 .col h6{
+		font-size: 14px;
+	}
+	#footer .row.footer-1 .col li{
+		font-size: 11px;
+	}
+	#footer img{
+		min-height: 90px;
+		min-width: 90px;
+	}
+	iframe{
+		min-height: 700px;
+	}
+	#footer .row.footer-2 p{
+		font-size: 8px;
+	}
+	#kontak{
+		/*left: 0;*/
+	}
+	.landing-page .judul{
+		font-size: 30px;
+	}
+	.landing-page .subjudul{
+		font-size: 14px;
+	}
+	.landing-page .judul a{
+		font-size: 28px;
+	}
+	.tombol-pesan{
+		font-weight: 700;
+		padding: 5px 10px 5px 10px;
+		font-size: 20px;
+		border: 1px solid coral;
+		font-weight: 500;
+	}
+	.segitiga{
+		border: 45px solid;
+		width: 0; 
+		height: 0; 
+		border-color: #FF0048 transparent transparent #FF0048;
+		position: absolute;
+		top: 0;
+	}
+	.foto-promo .diskon{
+		font-size: 13px;
+	}
+	.card-body .card-title{
+		font-size: 20px;
+	}
+	.slider{
+		width: 350px !important;
+	}
+	.detail{
+		font-size: 20px;
+	}
+	#promo table img{
+		width: 50px;
+	}
+	#promo table{
+		font-size: 9px;
+	}
+	#about .col-kanan{
+		right: 0;
+		background-color: #FFFFFF; 
+	}
+}
