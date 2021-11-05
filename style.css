@@ -147,8 +147,7 @@ body{
 
 }
 #form h3, #form h2{
-	font-weight: 700;
-	font-family: 'Poppins-Bold', sans-serif;
+	font-family: 'Poppins-Regular', sans-serif;
 }
 #form img{
 	width: 200px;
