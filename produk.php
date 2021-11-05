@@ -18,14 +18,9 @@ require_once('session_check.php');
 </head>
 <body>
 	<!-- kontak -->
-	<div id="kontak">
-		<div class="container">
-			<div class="d-flex justify-content-center">
-			<a href="https://wa.me/6282264120926?text=Hai%2C%20saya%20tertarik%20dengan%20produk%20telur%20asin%20anda.%0A%0AData%20Pembeli%20%0ANama%20%3A%0AAlamat%20%3A%0A%0APesanan%0A-" class="keterangan wa text-dark text-decoration-none">Tertarik ?<br><span class="fw-bolder text-success">Beli Sekarang</span></a>
-			<a id="wa"><i class="fab fa-whatsapp"></i></a>
-			</div>
-		</div>
-	</div>
+	<?
+	require ('komponen/kontak-wa.php');
+	?>
 	<!-- end kontak -->
 	<!-- header -->
 	<div id="header">
@@ -35,7 +30,7 @@ require_once('session_check.php');
 	</div>
 	<div id="produk">
 		<div class="container">
-			<h1 class="text-center mt-5">Sempel Produk Kami</h1>
+			<h1 class="text-center mt-3 mt-sm-5">SAMPLE PRODUK KAMI</h1>
 			<p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, veniam?</p>
 			<? if ($sessionStatus) : ?>
 				<a href="form_produk.php" class="btn add produk text-success mt-2 mb-3">Tambah</a>

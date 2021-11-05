@@ -28,8 +28,8 @@ require_once('session_check.php');
 	<div id="promo" class="mt-4">
 
 		<div class="container">
-			<div class="judul-promo">
-				<span>List Promo Produk</span>
+			<div class="judul-promo text-center">
+				<span>LIST PROMO PRODUK</span>
 			</div>
 
 				<div class="row mb-4 mt-2">
@@ -44,19 +44,19 @@ require_once('session_check.php');
 
 				<div class="row">
 
-					<div class="col">
+					<div class="col table-responsive">
 
-						<table class="table table-striped responsive-utilities jambo_table bulk_action text-center">
+						<table class="table table-striped table-bordered responsive-utilities text-center">
 							<thead>
 								<tr>
 									<th scope="col">#</th>
-									<th scope="col">Foto</th>
-									<th scope="col">Promo</th>
-									<th scope="col">Harga Normal</th>
-									<th scope="col">Harga Promo</th>
-									<th scope="col">Diskon</th>
-									<th scope="col">Keterangan</th>
-									<th scope="col">Aksi</th>
+									<th scope="col">FOTO</th>
+									<th scope="col">PROMO</th>
+									<th scope="col">HARGA NORMAL</th>
+									<th scope="col">HARGA PROMO</th>
+									<th scope="col">DISKON</th>
+									<th scope="col">KETERANGAN</th>
+									<th scope="col">OPSI&nbspPENGEDITAN</th>
 								</tr>
 							</thead>
 

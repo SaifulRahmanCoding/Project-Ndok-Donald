@@ -25,7 +25,7 @@ require_once('session_check.php');
 	</div>
 	<div id="about" class="mt-3 pt-3 pb-3">
 			<div class="container">
-				<h1 class="text-center mb-3">Ndok Donald Borobudur</h1>
+				<h1 class="text-center mb-3">ABOUT US</h1>
 				<div class="row mb-2">
 					
 					<div class="col-12 col-sm-7 col-lg-7">
@@ -34,7 +34,7 @@ require_once('session_check.php');
 					<div class="col-kanan col-12 col-sm-5 col-lg-5 p-0 mt-2 mb-2 shadow-sm">
 						<div class="col-12 pt-3 fs-4 fw-bolder">
 							<p class="text-center mb-0">
-								ABOUT US
+								Ndok Donald Borobudur
 							</p>
 						</div>
 						<div class="col-12 p-4 mt-0 mt-sm-2">

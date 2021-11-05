@@ -122,6 +122,9 @@ body{
 .navbar-collapse.collapse.show .dropdown-menu li a:hover{
 	box-shadow: none;
 }
+.navbar-collapse.collapse.show .dropdown-menu li a:focus, .dropdown-menu li a:focus{
+	background-color: coral !important;
+}
 /*end show menu*/
 /*end nav*/
 
@@ -184,7 +187,7 @@ input:focus, .btn:focus, .navbar-toggler:focus, .accordion-button:focus, textare
 	
 }
 #wa{
-	font-size: 40px;
+	font-size: 35px;
 	border-radius: 50%;
 	padding: 0px 10px 0px 10px;
 	color: #FFFFFF;
@@ -195,7 +198,6 @@ input:focus, .btn:focus, .navbar-toggler:focus, .accordion-button:focus, textare
 }
 #kontak .keterangan.wa{
 	background-color: #B1FA9B;
-	padding-top: 5px !important;
 	text-align: center;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -254,6 +256,13 @@ input:focus, .btn:focus, .navbar-toggler:focus, .accordion-button:focus, textare
 
 #promo table img{
 	width: 100px;
+}
+#promo table tr,#promo table td{
+	vertical-align: middle;
+	justify-content: center;
+}
+#promo table thead{
+
 }
 /*end*/
 
@@ -382,7 +391,8 @@ iframe{
 	border-radius: 20px;
 }
 #produk .add.produk:hover{
-	background-color: #F1F1F1;
+	background-color: green;
+	color: #FFFFFF !important;
 }
 
 #produk .lain-nya a{
@@ -392,9 +402,12 @@ iframe{
 	border-radius: 10px;
 }
 #produk .lain-nya a:hover{
-	background-color: #C0C0C0;
 	font-weight: 700;
 	transition: 0.5s;
+	box-shadow: 0px 0px 4px 3px #E9E9E9 !important;
+}
+.modal-footer p{
+	text-align: justify;
 }
 
 /*responsive layar*/

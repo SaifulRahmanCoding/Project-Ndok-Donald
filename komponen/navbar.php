@@ -24,7 +24,7 @@
 					<a class="nav-link" aria-current="page"  href="index.php">HOME</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" aria-current="page"  href="produk.php">SEMPEL</a>
+					<a class="nav-link" aria-current="page"  href="produk.php">SAMPLE</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" aria-current="page"  href="lokasi.php">LOKASI</a>
@@ -32,26 +32,24 @@
 				<li class="nav-item">
 					<a class="nav-link" aria-current="page"  href="about.php">ABOUT</a>
 				</li>
-				<? if($sessionStatus) : ?>
-				<li class="nav-item">
-					<a class="nav-link" aria-current="page"  href="promo.php">EDIT PROMO</a>
-				</li>
-				<? endif; ?>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admin </a>
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ADMIN </a>
 
 					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<? if ($sessionStatus) : ?>
 							<li>
-								<a class="dropdown-item" href="logout.php">Logout <i class="fa  fa-sign-out-alt"></i></a>
+								<a class="dropdown-item" href="promo.php">EDIT PROMO</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="registration.php">Buat Akun Baru
+								<a class="dropdown-item" href="registration.php">REGISTRASI AKUN
 								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="logout.php">LOGOUT <i class="fa  fa-sign-out-alt"></i></a>
 							</li>
 						<? else : ?>
 							<li>
-								<a class="dropdown-item" href="login.php">Login <i class="fa fa-sign-in-alt"></i>
+								<a class="dropdown-item" href="login.php">LOGIN <i class="fa fa-sign-in-alt"></i>
 								</a>
 							</li>
 						<? endif; ?>
